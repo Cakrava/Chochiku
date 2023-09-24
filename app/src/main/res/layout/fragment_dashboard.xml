@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/fragment_dashboard"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".ui.dashboard.DashboardFragment">
+
+    <LinearLayout
+
+        android:padding="@dimen/_10sdp"
+        android:gravity="center_vertical"
+        android:background="@drawable/atas"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_130sdp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <androidx.cardview.widget.CardView
+          android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+          android:layout_marginRight="@dimen/_10sdp"
+            app:cardCornerRadius="50dp"
+            android:layout_gravity="center"
+            app:cardElevation="4dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+            <ImageView
+
+                android:id="@+id/photoprofil"
+                android:layout_width="150sp"
+                android:layout_height="@dimen/_150sdp"/>
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+        <LinearLayout
+            android:layout_width="@dimen/_180sdp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_tmplnama"
+                android:textSize="@dimen/_15sdp"
+                android:textColor="@color/white"
+                android:text="Ini Nama Samaran"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:id="@+id/tv_username"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10sdp"
+                android:text=".@Username"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <TextView
+
+                android:id="@+id/tv_catatan"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/white"
+                android:text="Jumlah riwayat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+        <Button
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:id="@+id/btn_edit"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+
+            android:background="@drawable/i_edit"
+            app:backgroundTint="@color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+       <FrameLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+           <ImageButton
+
+               android:background="@android:color/transparent"
+               android:id="@+id/btn_notice"
+               android:layout_width="@dimen/_250sdp"
+               android:layout_height="@dimen/_20sdp"/>
+
+            <LinearLayout
+               android:background="@drawable/rounded_square_low"
+                android:gravity="center_vertical"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:orientation="horizontal">
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="@dimen/_100sdp"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp">
+
+                     <RelativeLayout
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_50sdp">
+                        <ImageView
+                            android:src="@drawable/default_photo"
+                            android:id="@+id/pp_client"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+                    </RelativeLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/tv_user_client"
+                    android:textColor="@color/hijau_tua"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_width="@dimen/_200sdp"
+                    android:layout_height="wrap_content"
+                    android:text="Klik untuk senggol"/>
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/notifikasi"
+                    android:tint="@color/hijau_tua2"/>
+
+            </LinearLayout>
+       </FrameLayout>
+
+            <RelativeLayout
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:background="@drawable/rounded_square_low"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <Button
+                    android:id="@+id/btn_tukar"
+                    android:background="@android:color/transparent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/tukar"
+                        android:tint="@color/hijau_tua2"/>
+            </FrameLayout>
+
+        </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

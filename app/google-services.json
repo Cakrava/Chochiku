@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "983134916249",
+    "firebase_url": "https://chochiku-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "chochiku",
+    "storage_bucket": "chochiku.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:983134916249:android:74e9d2638aa612f2e57208",
+        "android_client_info": {
+          "package_name": "com.example.chochiku"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYYzPEFTDfFcirrENQbQDtR-3_eC21H5U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
